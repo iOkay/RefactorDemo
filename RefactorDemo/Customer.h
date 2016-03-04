@@ -16,4 +16,6 @@
 
 - (void)addRental:(Rental *)rental;
 
+- (NSString *)statement;
+
 @end

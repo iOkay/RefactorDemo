@@ -8,17 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger, MovieType) {
-    MovieTypeRegular = 0,
-    MovieTypeNewRelease = 1,
-    MovieTypeChildrens = 2,
+typedef NS_ENUM(NSInteger, MoviePriceCode) {
+    MoviePriceRegular = 0,
+    MoviePriceNewRelease = 1,
+    MoviePriceChildrens = 2,
 };
 
 @interface Movie : NSObject
 
 @property (copy, nonatomic) NSString *title;
-@property (assign, nonatomic) NSInteger priceCode;
+@property (assign, nonatomic) MoviePriceCode priceCode;
 
-- (instancetype)initWithTitle:(NSString *)title priceCode:(NSInteger)priceCode;
+- (instancetype)initWithTitle:(NSString *)title priceCode:(MoviePriceCode)priceCode;
 
 @end

@@ -14,7 +14,7 @@
 
 @implementation Movie
 
-- (instancetype)initWithTitle:(NSString *)title priceCode:(NSInteger)priceCode
+- (instancetype)initWithTitle:(NSString *)title priceCode:(MoviePriceCode)priceCode
 {
     self = [super init];
     
