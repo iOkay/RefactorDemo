@@ -40,24 +40,43 @@
 // 生成详单函数
 - (NSString *)statement
 {
-    double totalAmount = 0;
-    NSInteger frequentRenterPoints = 0;
     NSMutableString *result = [[NSMutableString alloc] initWithFormat:@"Rental Record for %@ \n", self.name];
     
     for (Rental *rental in self.rentals) {
         
-        frequentRenterPoints += rental.frequentRenterPoint;
-        
         // show figures for this rental
         [result appendString:[NSString stringWithFormat:@"\t%@\t%@\n", rental.movie.title, [NSNumber numberWithDouble:rental.charge]]];
-        totalAmount += rental.charge;
     }
     
     // add footer lines
-    [result appendString:[NSString stringWithFormat:@"Amount owed is %@\n", [NSNumber numberWithDouble:totalAmount]]];
-    [result appendString:[NSString stringWithFormat:@"You earned %@\n frequent renter points", [NSNumber numberWithInteger:frequentRenterPoints] ]];
+    [result appendString:[NSString stringWithFormat:@"Amount owed is %@\n", [NSNumber numberWithDouble:[self totalCharge]]]];
+    [result appendString:[NSString stringWithFormat:@"You earned %@\n frequent renter points", [NSNumber numberWithInteger:[self frequentRenterPoints]] ]];
     
     return result;
+}
+
+- (double)totalCharge
+{
+    double totalAmount = 0;
+    
+    for (Rental *rental in self.rentals) {
+        
+        totalAmount += rental.charge;
+    }
+
+    return totalAmount;
+}
+
+- (NSInteger)frequentRenterPoints
+{
+    NSInteger frequentRenterPoints = 0;
+
+    for (Rental *rental in self.rentals) {
+        
+        frequentRenterPoints += rental.frequentRenterPoint;
+    }
+
+    return frequentRenterPoints;
 }
 
 @end
