@@ -24,4 +24,34 @@
     return self;
 }
 
+- (double)charge
+{
+    double result = 0;
+    
+    switch (self.movie.priceCode) {
+        case MoviePriceRegular:
+            result += 2;
+            if (self.daysRented > 2) {
+                result += (self.daysRented - 2) * 1.5;
+            }
+            break;
+        case MoviePriceNewRelease:
+            
+            result += self.daysRented * 3;
+            break;
+        case MoviePriceChildrens:
+            result += 1.5;
+            if (self.daysRented > 3) {
+                
+                result += (self.daysRented - 3) * 1.5;
+            }
+            break;
+        default:
+            break;
+    }
+    
+    return result;
+}
+
+
 @end

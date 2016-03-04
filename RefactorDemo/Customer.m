@@ -41,8 +41,6 @@
     
     for (Rental *rental in self.rentals) {
         
-        double thisAmount = [self amountFor:rental];
-
         // add frequent renter points
         frequentRenterPoints++;
         
@@ -52,8 +50,8 @@
         }
         
         // show figures for this rental
-        [result appendString:[NSString stringWithFormat:@"\t%@\t%@\n", rental.movie.title, [NSNumber numberWithDouble:thisAmount]]];
-        totalAmount += thisAmount;
+        [result appendString:[NSString stringWithFormat:@"\t%@\t%@\n", rental.movie.title, [NSNumber numberWithDouble:rental.charge]]];
+        totalAmount += rental.charge;
     }
     
     // add footer lines
@@ -61,35 +59,6 @@
     [result appendString:[NSString stringWithFormat:@"You earned %@\n frequent renter points", [NSNumber numberWithInteger:frequentRenterPoints] ]];
     
     return result;
-}
-
-- (double)amountFor:(Rental *)rental
-{
-    double thisAmount = 0;
-    
-    switch (rental.movie.priceCode) {
-        case MoviePriceRegular:
-            thisAmount += 2;
-            if (rental.daysRented > 2) {
-                thisAmount += (rental.daysRented - 2) * 1.5;
-            }
-            break;
-        case MoviePriceNewRelease:
-            
-            thisAmount += rental.daysRented * 3;
-            break;
-        case MoviePriceChildrens:
-            thisAmount += 1.5;
-            if (rental.daysRented > 3) {
-                
-                thisAmount += (rental.daysRented - 3) * 1.5;
-            }
-            break;
-        default:
-            break;
-    }
-    
-    return thisAmount;
 }
 
 @end

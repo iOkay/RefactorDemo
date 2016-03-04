@@ -17,4 +17,6 @@
 
 - (instancetype)initWithMovie:(Movie *)movie daysRented:(NSInteger)daysRented;
 
+- (double)charge;
+
 @end
