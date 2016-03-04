@@ -32,6 +32,11 @@
     [self.rentals addObject:rental];
 }
 
+- (NSInteger)frequentRenterPointFor:(Rental *)rental
+{
+    return rental.frequentRenterPoint;
+}
+
 // 生成详单函数
 - (NSString *)statement
 {
@@ -41,13 +46,7 @@
     
     for (Rental *rental in self.rentals) {
         
-        // add frequent renter points
-        frequentRenterPoints++;
-        
-        // add bounds for a two day new release rental
-        if (rental.movie.priceCode == MoviePriceNewRelease && rental.daysRented > 1) {
-            frequentRenterPoints++;
-        }
+        frequentRenterPoints += rental.frequentRenterPoint;
         
         // show figures for this rental
         [result appendString:[NSString stringWithFormat:@"\t%@\t%@\n", rental.movie.title, [NSNumber numberWithDouble:rental.charge]]];

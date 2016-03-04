@@ -53,5 +53,17 @@
     return result;
 }
 
+- (NSInteger)frequentRenterPoint
+{
+    if (self.movie.priceCode == MoviePriceNewRelease && self.daysRented > 1) {
+        
+        return 2;
+    } else {
+        
+        return 1;
+    }
+
+}
+
 
 @end
