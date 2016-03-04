@@ -32,7 +32,6 @@
     [self.rentals addObject:rental];
 }
 
-
 // 生成详单函数
 - (NSString *)statement
 {
@@ -42,31 +41,8 @@
     
     for (Rental *rental in self.rentals) {
         
-        double thisAmount = 0;
-        
-        // determine amounts for each rental
-        switch (rental.movie.priceCode) {
-            case MoviePriceRegular:
-                thisAmount += 2;
-                if (rental.daysRented > 2) {
-                    thisAmount += (rental.daysRented - 2) * 1.5;
-                }
-                break;
-            case MoviePriceNewRelease:
-                
-                thisAmount += rental.daysRented * 3;
-                break;
-            case MoviePriceChildrens:
-                thisAmount += 1.5;
-                if (rental.daysRented > 3) {
-                    
-                    thisAmount += (rental.daysRented - 3) * 1.5;
-                }
-                break;
-            default:
-                break;
-        }
-        
+        double thisAmount = [self amountFor:rental];
+
         // add frequent renter points
         frequentRenterPoints++;
         
@@ -85,6 +61,35 @@
     [result appendString:[NSString stringWithFormat:@"You earned %@\n frequent renter points", [NSNumber numberWithInteger:frequentRenterPoints] ]];
     
     return result;
+}
+
+- (double)amountFor:(Rental *)rental
+{
+    double thisAmount = 0;
+    
+    switch (rental.movie.priceCode) {
+        case MoviePriceRegular:
+            thisAmount += 2;
+            if (rental.daysRented > 2) {
+                thisAmount += (rental.daysRented - 2) * 1.5;
+            }
+            break;
+        case MoviePriceNewRelease:
+            
+            thisAmount += rental.daysRented * 3;
+            break;
+        case MoviePriceChildrens:
+            thisAmount += 1.5;
+            if (rental.daysRented > 3) {
+                
+                thisAmount += (rental.daysRented - 3) * 1.5;
+            }
+            break;
+        default:
+            break;
+    }
+    
+    return thisAmount;
 }
 
 @end
