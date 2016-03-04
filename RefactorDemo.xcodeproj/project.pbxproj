@@ -13,6 +13,9 @@
 		A579F0471C89604D0031C003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A579F0451C89604D0031C003 /* Main.storyboard */; };
 		A579F0491C89604D0031C003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A579F0481C89604D0031C003 /* Assets.xcassets */; };
 		A579F04C1C89604D0031C003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A579F04A1C89604D0031C003 /* LaunchScreen.storyboard */; };
+		A579F0561C8961BE0031C003 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F0551C8961BE0031C003 /* Movie.m */; };
+		A579F0591C89636B0031C003 /* Rental.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F0581C89636B0031C003 /* Rental.m */; };
+		A579F05C1C8964090031C003 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F05B1C8964090031C003 /* Customer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		A579F0481C89604D0031C003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A579F04B1C89604D0031C003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A579F04D1C89604D0031C003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A579F0541C8961BE0031C003 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		A579F0551C8961BE0031C003 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		A579F0571C89636B0031C003 /* Rental.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rental.h; sourceTree = "<group>"; };
+		A579F0581C89636B0031C003 /* Rental.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rental.m; sourceTree = "<group>"; };
+		A579F05A1C8964090031C003 /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		A579F05B1C8964090031C003 /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		A579F03B1C89604D0031C003 /* RefactorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A579F0531C8961AB0031C003 /* Model */,
 				A579F03F1C89604D0031C003 /* AppDelegate.h */,
 				A579F0401C89604D0031C003 /* AppDelegate.m */,
 				A579F0421C89604D0031C003 /* ViewController.h */,
@@ -77,6 +87,19 @@
 				A579F03D1C89604D0031C003 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A579F0531C8961AB0031C003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A579F0541C8961BE0031C003 /* Movie.h */,
+				A579F0551C8961BE0031C003 /* Movie.m */,
+				A579F0571C89636B0031C003 /* Rental.h */,
+				A579F0581C89636B0031C003 /* Rental.m */,
+				A579F05A1C8964090031C003 /* Customer.h */,
+				A579F05B1C8964090031C003 /* Customer.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A579F0441C89604D0031C003 /* ViewController.m in Sources */,
+				A579F05C1C8964090031C003 /* Customer.m in Sources */,
 				A579F0411C89604D0031C003 /* AppDelegate.m in Sources */,
+				A579F0591C89636B0031C003 /* Rental.m in Sources */,
+				A579F0561C8961BE0031C003 /* Movie.m in Sources */,
 				A579F03E1C89604D0031C003 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
