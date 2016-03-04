@@ -21,4 +21,7 @@ typedef NS_ENUM(NSInteger, MoviePriceCode) {
 
 - (instancetype)initWithTitle:(NSString *)title priceCode:(MoviePriceCode)priceCode;
 
+- (double)chargeWithDaysRented:(NSInteger)daysRented;
+- (NSInteger)frequentRenterPointWithDaysRented:(NSInteger)daysRented;
+
 @end

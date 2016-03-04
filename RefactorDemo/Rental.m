@@ -26,43 +26,13 @@
 
 - (double)charge
 {
-    double result = 0;
-    
-    switch (self.movie.priceCode) {
-        case MoviePriceRegular:
-            result += 2;
-            if (self.daysRented > 2) {
-                result += (self.daysRented - 2) * 1.5;
-            }
-            break;
-        case MoviePriceNewRelease:
-            
-            result += self.daysRented * 3;
-            break;
-        case MoviePriceChildrens:
-            result += 1.5;
-            if (self.daysRented > 3) {
-                
-                result += (self.daysRented - 3) * 1.5;
-            }
-            break;
-        default:
-            break;
-    }
-    
-    return result;
+    return [self.movie chargeWithDaysRented:self.daysRented];
 }
 
 - (NSInteger)frequentRenterPoint
 {
-    if (self.movie.priceCode == MoviePriceNewRelease && self.daysRented > 1) {
-        
-        return 2;
-    } else {
-        
-        return 1;
-    }
-
+    
+    return [self.movie frequentRenterPointWithDaysRented:self.daysRented];
 }
 
 
