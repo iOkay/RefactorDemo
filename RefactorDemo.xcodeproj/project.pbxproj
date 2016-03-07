@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A55B05F41C8D596400B6A3CB /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = A55B05F31C8D596400B6A3CB /* Price.m */; };
 		A579F03E1C89604D0031C003 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F03D1C89604D0031C003 /* main.m */; };
 		A579F0411C89604D0031C003 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F0401C89604D0031C003 /* AppDelegate.m */; };
 		A579F0441C89604D0031C003 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F0431C89604D0031C003 /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A55B05F21C8D596400B6A3CB /* Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
+		A55B05F31C8D596400B6A3CB /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
 		A579F0391C89604D0031C003 /* RefactorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefactorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A579F03D1C89604D0031C003 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A579F03F1C89604D0031C003 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				A579F0581C89636B0031C003 /* Rental.m */,
 				A579F05A1C8964090031C003 /* Customer.h */,
 				A579F05B1C8964090031C003 /* Customer.m */,
+				A55B05F21C8D596400B6A3CB /* Price.h */,
+				A55B05F31C8D596400B6A3CB /* Price.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				A579F0591C89636B0031C003 /* Rental.m in Sources */,
 				A579F0561C8961BE0031C003 /* Movie.m in Sources */,
 				A579F03E1C89604D0031C003 /* main.m in Sources */,
+				A55B05F41C8D596400B6A3CB /* Price.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +333,7 @@
 				A579F0521C89604D0031C003 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

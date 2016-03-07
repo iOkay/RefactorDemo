@@ -14,12 +14,17 @@ typedef NS_ENUM(NSInteger, MoviePriceCode) {
     MoviePriceChildrens = 2,
 };
 
+@class Price;
+
 @interface Movie : NSObject
 
 @property (copy, nonatomic) NSString *title;
-@property (assign, nonatomic) MoviePriceCode priceCode;
+@property (nonatomic, strong) Price *price;
 
 - (instancetype)initWithTitle:(NSString *)title priceCode:(MoviePriceCode)priceCode;
+
+- (void)setPriceCode:(MoviePriceCode)priceCode;
+- (MoviePriceCode)priceCode;
 
 - (double)chargeWithDaysRented:(NSInteger)daysRented;
 - (NSInteger)frequentRenterPointWithDaysRented:(NSInteger)daysRented;

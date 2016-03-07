@@ -7,6 +7,7 @@
 //
 
 #import "Movie.h"
+#import "Price.h"
 
 @interface Movie ()
 
@@ -20,52 +21,47 @@
     
     if (self) {
         self.title = title;
-        self.priceCode = priceCode;
+        [self setPriceCode:priceCode];
     }
     
     return self;
 }
 
-- (double)chargeWithDaysRented:(NSInteger)daysRented
+#pragma mark - setter/getter
+
+- (void)setPriceCode:(MoviePriceCode)priceCode
 {
-    double result = 0;
-    
-    switch (self.priceCode) {
-        case MoviePriceRegular:
-            result += 2;
-            if (daysRented > 2) {
-                result += (daysRented - 2) * 1.5;
-            }
+    switch (priceCode) {
+        case MoviePriceChildrens:
+            _price = [ChildrensPrice new];
             break;
         case MoviePriceNewRelease:
-            
-            result += daysRented * 3;
+            _price = [NewReleasePrice new];
             break;
-        case MoviePriceChildrens:
-            result += 1.5;
-            if (daysRented > 3) {
-                
-                result += (daysRented - 3) * 1.5;
-            }
+        case MoviePriceRegular:
+            _price = [RegularPrice new];
             break;
         default:
+            NSAssert(NO, @"Incorrect Price Code");
             break;
     }
-    
-    return result;
+}
 
+- (MoviePriceCode)priceCode
+{
+    return _price.priceCode;
+}
+
+#pragma mark - 
+
+- (double)chargeWithDaysRented:(NSInteger)daysRented
+{
+    return [_price chargeWithDaysRented:daysRented];
 }
 
 - (NSInteger)frequentRenterPointWithDaysRented:(NSInteger)daysRented
 {
-    if (self.priceCode == MoviePriceNewRelease && daysRented > 1) {
-        
-        return 2;
-    } else {
-        
-        return 1;
-    }
-
+    return [_price frequentRenterPointWithDaysRented:daysRented];
 }
 
 @end
