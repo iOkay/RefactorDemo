@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A55B05F41C8D596400B6A3CB /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = A55B05F31C8D596400B6A3CB /* Price.m */; };
+		A5615FFF1C8ECCF400EE7A8A /* ExtractMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A5615FFE1C8ECCF400EE7A8A /* ExtractMethod.m */; };
+		A56160031C8ED5DC00EE7A8A /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = A56160021C8ED5DC00EE7A8A /* Order.m */; };
 		A579F03E1C89604D0031C003 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F03D1C89604D0031C003 /* main.m */; };
 		A579F0411C89604D0031C003 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F0401C89604D0031C003 /* AppDelegate.m */; };
 		A579F0441C89604D0031C003 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F0431C89604D0031C003 /* ViewController.m */; };
@@ -22,6 +24,10 @@
 /* Begin PBXFileReference section */
 		A55B05F21C8D596400B6A3CB /* Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
 		A55B05F31C8D596400B6A3CB /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
+		A5615FFD1C8ECCF400EE7A8A /* ExtractMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtractMethod.h; sourceTree = "<group>"; };
+		A5615FFE1C8ECCF400EE7A8A /* ExtractMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtractMethod.m; sourceTree = "<group>"; };
+		A56160011C8ED5DC00EE7A8A /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		A56160021C8ED5DC00EE7A8A /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
 		A579F0391C89604D0031C003 /* RefactorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefactorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A579F03D1C89604D0031C003 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A579F03F1C89604D0031C003 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +57,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5615FFB1C8ECC7F00EE7A8A /* 01.Composing Methods */ = {
+			isa = PBXGroup;
+			children = (
+				A5615FFC1C8ECCB600EE7A8A /* 01.Extract Method */,
+			);
+			name = "01.Composing Methods";
+			sourceTree = "<group>";
+		};
+		A5615FFC1C8ECCB600EE7A8A /* 01.Extract Method */ = {
+			isa = PBXGroup;
+			children = (
+				A5615FFD1C8ECCF400EE7A8A /* ExtractMethod.h */,
+				A5615FFE1C8ECCF400EE7A8A /* ExtractMethod.m */,
+				A56160011C8ED5DC00EE7A8A /* Order.h */,
+				A56160021C8ED5DC00EE7A8A /* Order.m */,
+			);
+			name = "01.Extract Method";
+			sourceTree = "<group>";
+		};
 		A579F0301C89604D0031C003 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +95,7 @@
 		A579F03B1C89604D0031C003 /* RefactorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5615FFB1C8ECC7F00EE7A8A /* 01.Composing Methods */,
 				A579F0531C8961AB0031C003 /* Model */,
 				A579F03F1C89604D0031C003 /* AppDelegate.h */,
 				A579F0401C89604D0031C003 /* AppDelegate.m */,
@@ -178,12 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56160031C8ED5DC00EE7A8A /* Order.m in Sources */,
 				A579F0441C89604D0031C003 /* ViewController.m in Sources */,
 				A579F05C1C8964090031C003 /* Customer.m in Sources */,
 				A579F0411C89604D0031C003 /* AppDelegate.m in Sources */,
 				A579F0591C89636B0031C003 /* Rental.m in Sources */,
 				A579F0561C8961BE0031C003 /* Movie.m in Sources */,
 				A579F03E1C89604D0031C003 /* main.m in Sources */,
+				A5615FFF1C8ECCF400EE7A8A /* ExtractMethod.m in Sources */,
 				A55B05F41C8D596400B6A3CB /* Price.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +324,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = RefactorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wanmei.RefactorDemo;
