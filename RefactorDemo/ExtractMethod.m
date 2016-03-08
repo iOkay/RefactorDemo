@@ -23,6 +23,8 @@
     
     double outstanding = 0.0;
     
+    [self printBanner];
+    
     // calculate outstanding
     
     for (Order *item in self.orders) {
@@ -30,18 +32,25 @@
         outstanding += item.amount;
     }
     
-    //print details
-    NSLog(@"name: %@", _name);
-    NSLog(@"amount: %f", outstanding);
+    [self printDetails:outstanding];
 }
 
 
 // 无局部变量
-- (void)printBanner{
+- (void)printBanner {
     // print banner
     NSLog(@"**************************");
     NSLog(@"***** Customer Owes ******");
     NSLog(@"**************************");
+
+}
+
+// 有局部变量
+- (void)printDetails:(double)outstanding {
+    
+    //print details
+    NSLog(@"name: %@", _name);
+    NSLog(@"amount: %f", outstanding);
 
 }
 
