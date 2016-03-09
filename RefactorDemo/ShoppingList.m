@@ -19,18 +19,19 @@
 
 - (double)price {
     
-    double discountFactor;
-    if ([self basePrice] > 1000) {
-        discountFactor = 0.95;
-    } else {
-        discountFactor = 0.98;
-    }
-    
-    return [self basePrice] * discountFactor;
+    return [self basePrice] * [self discountFactor];
 }
 
 - (int)basePrice {
     return _quantity * _itemPrice;
+}
+
+- (double)discountFactor {
+    if ([self basePrice] > 1000) {
+        return 0.95;
+    } else {
+        return 0.98;
+    }
 }
 
 @end
