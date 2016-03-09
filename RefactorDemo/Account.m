@@ -7,19 +7,13 @@
 //
 
 #import "Account.h"
+#import "Gamma.h"
 
 @implementation Account
 
 - (int)gammaWithQuantity:(int)quantity inputVal:(int)inputVal yearToDate:(int)yearToDate {
-    int importantValue1 = (inputVal * quantity) + [self delta];
-    int importantValue2 = (inputVal *yearToDate) + 100;
-    if ((yearToDate - importantValue1) > 100) {
-        importantValue2 -= 20;
-    }
     
-    int importantValue3 = importantValue2 * 7;
-    
-    return importantValue3 - 2 * importantValue1;
+    return [[[Gamma alloc] initWithAccount:self quantity:quantity inputVal:inputVal yearToDate:yearToDate] compute];
 }
 
 

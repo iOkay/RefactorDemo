@@ -14,4 +14,6 @@
 
 - (instancetype)initWithAccount:(Account *)account quantity:(int)quantity inputVal:(int)inputVal yearToDate:(int)yearToDate;
 
+- (int)compute;
+
 @end
