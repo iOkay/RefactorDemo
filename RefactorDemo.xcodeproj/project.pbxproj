@@ -12,6 +12,7 @@
 		A55BBAE31C8FF45F0080F8EE /* Chips.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAE21C8FF45F0080F8EE /* Chips.m */; };
 		A55BBAE71C9002600080F8EE /* Pudding.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAE61C9002600080F8EE /* Pudding.m */; };
 		A55BBAEB1C90169E0080F8EE /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAEA1C90169E0080F8EE /* Account.m */; };
+		A55BBAEE1C9018A50080F8EE /* Gamma.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAED1C9018A50080F8EE /* Gamma.m */; };
 		A5615FFF1C8ECCF400EE7A8A /* ExtractMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A5615FFE1C8ECCF400EE7A8A /* ExtractMethod.m */; };
 		A56160031C8ED5DC00EE7A8A /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = A56160021C8ED5DC00EE7A8A /* Order.m */; };
 		A579F03E1C89604D0031C003 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F03D1C89604D0031C003 /* main.m */; };
@@ -36,6 +37,8 @@
 		A55BBAE61C9002600080F8EE /* Pudding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pudding.m; sourceTree = "<group>"; };
 		A55BBAE91C90169E0080F8EE /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		A55BBAEA1C90169E0080F8EE /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		A55BBAEC1C9018A50080F8EE /* Gamma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gamma.h; sourceTree = "<group>"; };
+		A55BBAED1C9018A50080F8EE /* Gamma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gamma.m; sourceTree = "<group>"; };
 		A5615FFD1C8ECCF400EE7A8A /* ExtractMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtractMethod.h; sourceTree = "<group>"; };
 		A5615FFE1C8ECCF400EE7A8A /* ExtractMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtractMethod.m; sourceTree = "<group>"; };
 		A56160011C8ED5DC00EE7A8A /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 			children = (
 				A55BBAE91C90169E0080F8EE /* Account.h */,
 				A55BBAEA1C90169E0080F8EE /* Account.m */,
+				A55BBAEC1C9018A50080F8EE /* Gamma.h */,
+				A55BBAED1C9018A50080F8EE /* Gamma.m */,
 			);
 			name = "08.Replace Method with Method Object";
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 				A56160031C8ED5DC00EE7A8A /* Order.m in Sources */,
 				A579F0441C89604D0031C003 /* ViewController.m in Sources */,
 				A55BBAE31C8FF45F0080F8EE /* Chips.m in Sources */,
+				A55BBAEE1C9018A50080F8EE /* Gamma.m in Sources */,
 				A55BBAE71C9002600080F8EE /* Pudding.m in Sources */,
 				A579F05C1C8964090031C003 /* Customer.m in Sources */,
 				A579F0411C89604D0031C003 /* AppDelegate.m in Sources */,
