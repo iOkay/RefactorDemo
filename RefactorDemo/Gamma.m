@@ -12,17 +12,30 @@
 
 @interface Gamma ()
 {
-    __weak Account *account;
-    int inputVal;
-    int quantity;
-    int yearToDate;
-    int importantValue1;
-    int importantValue2;
-    int importantValue3;
+    __weak Account *_account;
+    int _inputVal;
+    int _quantity;
+    int _yearToDate;
+    int _importantValue1;
+    int _importantValue2;
+    int _importantValue3;
 }
 
 @end
 
 @implementation Gamma
+
+- (instancetype)initWithAccount:(Account *)account quantity:(int)quantity inputVal:(int)inputVal yearToDate:(int)yearToDate {
+    self = [super init];
+    
+    if (self) {
+        _account = account;
+        _quantity = quantity;
+        _inputVal = inputVal;
+        _yearToDate = yearToDate;
+    }
+    
+    return self;
+}
 
 @end
