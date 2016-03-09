@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class Account;
+
 @interface Gamma : NSObject
 
 - (instancetype)initWithAccount:(Account *)account quantity:(int)quantity inputVal:(int)inputVal yearToDate:(int)yearToDate;

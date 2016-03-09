@@ -38,4 +38,17 @@
     return self;
 }
 
+- (int)compute {
+    _importantValue1 = (_inputVal * _quantity) + [_account delta];
+    _importantValue2 = (_inputVal * _yearToDate) + 100;
+    if ((_yearToDate - _importantValue1) > 100) {
+        _importantValue2 -= 20;
+    }
+    
+    _importantValue3 = _importantValue2 * 7;
+    
+    return _importantValue3 - 2 * _importantValue1;
+
+}
+
 @end
