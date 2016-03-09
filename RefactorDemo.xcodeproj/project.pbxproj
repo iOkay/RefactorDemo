@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A55B05F41C8D596400B6A3CB /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = A55B05F31C8D596400B6A3CB /* Price.m */; };
 		A55BBADF1C8FD64F0080F8EE /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBADE1C8FD64F0080F8EE /* ShoppingList.m */; };
+		A55BBAE31C8FF45F0080F8EE /* Chips.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAE21C8FF45F0080F8EE /* Chips.m */; };
 		A5615FFF1C8ECCF400EE7A8A /* ExtractMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A5615FFE1C8ECCF400EE7A8A /* ExtractMethod.m */; };
 		A56160031C8ED5DC00EE7A8A /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = A56160021C8ED5DC00EE7A8A /* Order.m */; };
 		A579F03E1C89604D0031C003 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F03D1C89604D0031C003 /* main.m */; };
@@ -27,6 +28,8 @@
 		A55B05F31C8D596400B6A3CB /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
 		A55BBADD1C8FD64F0080F8EE /* ShoppingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingList.h; sourceTree = "<group>"; };
 		A55BBADE1C8FD64F0080F8EE /* ShoppingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingList.m; sourceTree = "<group>"; };
+		A55BBAE11C8FF45F0080F8EE /* Chips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chips.h; sourceTree = "<group>"; };
+		A55BBAE21C8FF45F0080F8EE /* Chips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chips.m; sourceTree = "<group>"; };
 		A5615FFD1C8ECCF400EE7A8A /* ExtractMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtractMethod.h; sourceTree = "<group>"; };
 		A5615FFE1C8ECCF400EE7A8A /* ExtractMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtractMethod.m; sourceTree = "<group>"; };
 		A56160011C8ED5DC00EE7A8A /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
@@ -69,11 +72,21 @@
 			name = "04.Replace Temp with Query";
 			sourceTree = "<group>";
 		};
+		A55BBAE01C8FF3800080F8EE /* 05.Introduce Explaining Variable */ = {
+			isa = PBXGroup;
+			children = (
+				A55BBAE11C8FF45F0080F8EE /* Chips.h */,
+				A55BBAE21C8FF45F0080F8EE /* Chips.m */,
+			);
+			name = "05.Introduce Explaining Variable";
+			sourceTree = "<group>";
+		};
 		A5615FFB1C8ECC7F00EE7A8A /* 01.Composing Methods */ = {
 			isa = PBXGroup;
 			children = (
-				A55BBADC1C8FD5170080F8EE /* 04.Replace Temp with Query */,
 				A5615FFC1C8ECCB600EE7A8A /* 01.Extract Method */,
+				A55BBADC1C8FD5170080F8EE /* 04.Replace Temp with Query */,
+				A55BBAE01C8FF3800080F8EE /* 05.Introduce Explaining Variable */,
 			);
 			name = "01.Composing Methods";
 			sourceTree = "<group>";
@@ -219,6 +232,7 @@
 			files = (
 				A56160031C8ED5DC00EE7A8A /* Order.m in Sources */,
 				A579F0441C89604D0031C003 /* ViewController.m in Sources */,
+				A55BBAE31C8FF45F0080F8EE /* Chips.m in Sources */,
 				A579F05C1C8964090031C003 /* Customer.m in Sources */,
 				A579F0411C89604D0031C003 /* AppDelegate.m in Sources */,
 				A579F0591C89636B0031C003 /* Rental.m in Sources */,
