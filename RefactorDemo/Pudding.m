@@ -20,14 +20,14 @@
 
 - (double)distanceTravelled:(int)time {
     double result;
-    double acc = _primaryForce * _mass;
+    double primaeyAcc = _primaryForce * _mass;
     int primaryTime = MIN(time, _delay);
-    result = 0.5 * acc * primaryTime * primaryTime;
+    result = 0.5 * primaeyAcc * primaryTime * primaryTime;
     int secondaryTime = time - _delay;
     if (secondaryTime > 0) {
-        double primaryVel = acc * _delay;
-        acc = (_primaryForce + secondaryTime) / _mass;
-        result += primaryVel * secondaryTime + 0.5 * acc * secondaryTime * secondaryTime;
+        double primaryVel = primaeyAcc * _delay;
+        double secondAcc = (_primaryForce + secondaryTime) / _mass;
+        result += primaryVel * secondaryTime + 0.5 * secondAcc * secondaryTime * secondaryTime;
     }
     
     return result;
