@@ -19,6 +19,7 @@
 @implementation Pudding
 
 - (double)distanceTravelled:(int)time {
+    
     double result;
     double primaeyAcc = _primaryForce * _mass;
     int primaryTime = MIN(time, _delay);

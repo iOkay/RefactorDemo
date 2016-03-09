@@ -11,6 +11,7 @@
 		A55BBADF1C8FD64F0080F8EE /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBADE1C8FD64F0080F8EE /* ShoppingList.m */; };
 		A55BBAE31C8FF45F0080F8EE /* Chips.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAE21C8FF45F0080F8EE /* Chips.m */; };
 		A55BBAE71C9002600080F8EE /* Pudding.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAE61C9002600080F8EE /* Pudding.m */; };
+		A55BBAEB1C90169E0080F8EE /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAEA1C90169E0080F8EE /* Account.m */; };
 		A5615FFF1C8ECCF400EE7A8A /* ExtractMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A5615FFE1C8ECCF400EE7A8A /* ExtractMethod.m */; };
 		A56160031C8ED5DC00EE7A8A /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = A56160021C8ED5DC00EE7A8A /* Order.m */; };
 		A579F03E1C89604D0031C003 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A579F03D1C89604D0031C003 /* main.m */; };
@@ -33,6 +34,8 @@
 		A55BBAE21C8FF45F0080F8EE /* Chips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chips.m; sourceTree = "<group>"; };
 		A55BBAE51C9002600080F8EE /* Pudding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pudding.h; sourceTree = "<group>"; };
 		A55BBAE61C9002600080F8EE /* Pudding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pudding.m; sourceTree = "<group>"; };
+		A55BBAE91C90169E0080F8EE /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		A55BBAEA1C90169E0080F8EE /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		A5615FFD1C8ECCF400EE7A8A /* ExtractMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtractMethod.h; sourceTree = "<group>"; };
 		A5615FFE1C8ECCF400EE7A8A /* ExtractMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtractMethod.m; sourceTree = "<group>"; };
 		A56160011C8ED5DC00EE7A8A /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
@@ -93,13 +96,23 @@
 			name = "06.Split Temporary Variable";
 			sourceTree = "<group>";
 		};
+		A55BBAE81C9016540080F8EE /* 08.Replace Method with Method Object */ = {
+			isa = PBXGroup;
+			children = (
+				A55BBAE91C90169E0080F8EE /* Account.h */,
+				A55BBAEA1C90169E0080F8EE /* Account.m */,
+			);
+			name = "08.Replace Method with Method Object";
+			sourceTree = "<group>";
+		};
 		A5615FFB1C8ECC7F00EE7A8A /* 01.Composing Methods */ = {
 			isa = PBXGroup;
 			children = (
-				A55BBAE41C90023A0080F8EE /* 06.Split Temporary Variable */,
 				A5615FFC1C8ECCB600EE7A8A /* 01.Extract Method */,
 				A55BBADC1C8FD5170080F8EE /* 04.Replace Temp with Query */,
 				A55BBAE01C8FF3800080F8EE /* 05.Introduce Explaining Variable */,
+				A55BBAE41C90023A0080F8EE /* 06.Split Temporary Variable */,
+				A55BBAE81C9016540080F8EE /* 08.Replace Method with Method Object */,
 			);
 			name = "01.Composing Methods";
 			sourceTree = "<group>";
@@ -255,6 +268,7 @@
 				A5615FFF1C8ECCF400EE7A8A /* ExtractMethod.m in Sources */,
 				A55B05F41C8D596400B6A3CB /* Price.m in Sources */,
 				A55BBADF1C8FD64F0080F8EE /* ShoppingList.m in Sources */,
+				A55BBAEB1C90169E0080F8EE /* Account.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
