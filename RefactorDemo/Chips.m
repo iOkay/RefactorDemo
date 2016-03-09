@@ -19,7 +19,9 @@
 
 - (double)price {
     
-    return _quantity * _itemPrice -
+    // price is base price - quantity discount + shipping
+    double basePrice = _quantity * _itemPrice;
+    return basePrice -
     MAX(0, _quantity - 500) * _itemPrice * 0.05 +
     MIN(_quantity * _itemPrice * 0.1, 100.0);
 }
