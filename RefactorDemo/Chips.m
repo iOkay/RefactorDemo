@@ -21,8 +21,8 @@
     
     // price is base price - quantity discount + shipping
     double basePrice = _quantity * _itemPrice;
-    return basePrice -
-    MAX(0, _quantity - 500) * _itemPrice * 0.05 +
+    double quantityDiscount = MAX(0, _quantity - 500) * _itemPrice * 0.05;
+    return basePrice - quantityDiscount +
     MIN(basePrice * 0.1, 100.0);
 }
 
