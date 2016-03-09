@@ -23,7 +23,7 @@
     double basePrice = _quantity * _itemPrice;
     return basePrice -
     MAX(0, _quantity - 500) * _itemPrice * 0.05 +
-    MIN(_quantity * _itemPrice * 0.1, 100.0);
+    MIN(basePrice * 0.1, 100.0);
 }
 
 @end
