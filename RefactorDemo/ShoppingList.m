@@ -18,16 +18,19 @@
 @implementation ShoppingList
 
 - (double)price {
-    int basePrice = _quantity * _itemPrice;
     
     double discountFactor;
-    if (basePrice > 1000) {
+    if ([self basePrice] > 1000) {
         discountFactor = 0.95;
     } else {
         discountFactor = 0.98;
     }
     
-    return basePrice * discountFactor;
+    return [self basePrice] * discountFactor;
+}
+
+- (int)basePrice {
+    return _quantity * _itemPrice;
 }
 
 @end
