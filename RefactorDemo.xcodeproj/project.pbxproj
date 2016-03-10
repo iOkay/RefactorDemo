@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A54924C51C9111FB00754870 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924C41C9111FB00754870 /* BankAccount.m */; };
+		A54924C81C91121200754870 /* BankAccountType.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924C71C91121200754870 /* BankAccountType.m */; };
 		A55B05F41C8D596400B6A3CB /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = A55B05F31C8D596400B6A3CB /* Price.m */; };
 		A55BBADF1C8FD64F0080F8EE /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBADE1C8FD64F0080F8EE /* ShoppingList.m */; };
 		A55BBAE31C8FF45F0080F8EE /* Chips.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAE21C8FF45F0080F8EE /* Chips.m */; };
@@ -27,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A54924C31C9111FB00754870 /* BankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
+		A54924C41C9111FB00754870 /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
+		A54924C61C91121200754870 /* BankAccountType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountType.h; sourceTree = "<group>"; };
+		A54924C71C91121200754870 /* BankAccountType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountType.m; sourceTree = "<group>"; };
 		A55B05F21C8D596400B6A3CB /* Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
 		A55B05F31C8D596400B6A3CB /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
 		A55BBADD1C8FD64F0080F8EE /* ShoppingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingList.h; sourceTree = "<group>"; };
@@ -110,6 +116,25 @@
 			name = "08.Replace Method with Method Object";
 			sourceTree = "<group>";
 		};
+		A55BBAEF1C9039AC0080F8EE /* 02.Moving Features Between Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A55BBAF01C9039C10080F8EE /* 01.Move Method */,
+			);
+			name = "02.Moving Features Between Objects";
+			sourceTree = "<group>";
+		};
+		A55BBAF01C9039C10080F8EE /* 01.Move Method */ = {
+			isa = PBXGroup;
+			children = (
+				A54924C31C9111FB00754870 /* BankAccount.h */,
+				A54924C41C9111FB00754870 /* BankAccount.m */,
+				A54924C61C91121200754870 /* BankAccountType.h */,
+				A54924C71C91121200754870 /* BankAccountType.m */,
+			);
+			name = "01.Move Method";
+			sourceTree = "<group>";
+		};
 		A5615FFB1C8ECC7F00EE7A8A /* 01.Composing Methods */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +177,7 @@
 		A579F03B1C89604D0031C003 /* RefactorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A55BBAEF1C9039AC0080F8EE /* 02.Moving Features Between Objects */,
 				A5615FFB1C8ECC7F00EE7A8A /* 01.Composing Methods */,
 				A579F0531C8961AB0031C003 /* Model */,
 				A579F03F1C89604D0031C003 /* AppDelegate.h */,
@@ -268,12 +294,14 @@
 				A55BBAE71C9002600080F8EE /* Pudding.m in Sources */,
 				A579F05C1C8964090031C003 /* Customer.m in Sources */,
 				A579F0411C89604D0031C003 /* AppDelegate.m in Sources */,
+				A54924C81C91121200754870 /* BankAccountType.m in Sources */,
 				A579F0591C89636B0031C003 /* Rental.m in Sources */,
 				A579F0561C8961BE0031C003 /* Movie.m in Sources */,
 				A579F03E1C89604D0031C003 /* main.m in Sources */,
 				A5615FFF1C8ECCF400EE7A8A /* ExtractMethod.m in Sources */,
 				A55B05F41C8D596400B6A3CB /* Price.m in Sources */,
 				A55BBADF1C8FD64F0080F8EE /* ShoppingList.m in Sources */,
+				A54924C51C9111FB00754870 /* BankAccount.m in Sources */,
 				A55BBAEB1C90169E0080F8EE /* Account.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
