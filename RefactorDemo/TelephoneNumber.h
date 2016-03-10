@@ -10,4 +10,7 @@
 
 @interface TelephoneNumber : NSObject
 
+@property (nonatomic, copy) NSString *areaCode;
+@property (nonatomic, copy) NSString *number;
+
 @end

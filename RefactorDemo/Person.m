@@ -14,15 +14,30 @@
 @property (nonatomic, strong) TelephoneNumber *officeTelephone;
 
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *officeAreaCode;
-@property (nonatomic, copy) NSString *officeNumber;
 
 @end
 
 @implementation Person
 
 - (NSString *)telephoneNumber {
-    return [NSString stringWithFormat:@"(%@)%@", _officeAreaCode, _officeNumber];
+    return [NSString stringWithFormat:@"(%@)%@", self.officeAreaCode, self.officeNumber];
+}
+
+- (NSString *)officeAreaCode {
+    return self.officeTelephone.areaCode;
+}
+
+- (void)setOfficeAreaCode:(NSString *)officeAreaCode {
+
+    [self.officeTelephone setAreaCode:officeAreaCode];
+}
+
+- (NSString *)officeNumber {
+    return self.officeTelephone.number;
+}
+
+- (void)setOfficeNumber:(NSString *)officeNumber {
+    [self.officeTelephone setNumber:officeNumber];
 }
 
 @end
