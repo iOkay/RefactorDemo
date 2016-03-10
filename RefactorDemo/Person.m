@@ -20,7 +20,7 @@
 @implementation Person
 
 - (NSString *)telephoneNumber {
-    return [NSString stringWithFormat:@"(%@)%@", self.officeAreaCode, self.officeNumber];
+    return [self.officeTelephone telephoneNumber];
 }
 
 - (NSString *)officeAreaCode {

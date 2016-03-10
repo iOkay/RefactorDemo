@@ -10,6 +10,8 @@
 
 @implementation TelephoneNumber
 
-
+- (NSString *)telephoneNumber {
+    return [NSString stringWithFormat:@"(%@)%@", self.areaCode, self.number];
+}
 
 @end

@@ -13,4 +13,6 @@
 @property (nonatomic, copy) NSString *areaCode;
 @property (nonatomic, copy) NSString *number;
 
+- (NSString *)telephoneNumber;
+
 @end
