@@ -10,4 +10,6 @@
 
 @interface Employee : NSObject
 
+- (Employee *)manager;
+
 @end

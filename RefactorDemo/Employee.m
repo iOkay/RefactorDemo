@@ -17,4 +17,8 @@
 
 @implementation Employee
 
+- (Employee *)manager {
+    return [self.department manager];
+}
+
 @end
