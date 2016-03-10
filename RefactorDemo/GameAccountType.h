@@ -10,4 +10,6 @@
 
 @interface GameAccountType : NSObject
 
+@property (nonatomic, assign) double interestRate;
+
 @end

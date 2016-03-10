@@ -12,14 +12,13 @@
 @interface GameAccount ()
 
 @property (nonatomic, strong) GameAccountType *type;
-@property (nonatomic, assign) double interestRate;   // 将interestRate搬移到GameAccountType中
 
 @end
 
 @implementation GameAccount
 
 - (double)interestForAmount:(double)amount days:(int)days {
-    return _interestRate * amount * days / 365;
+    return _type.interestRate * amount * days / 365;
 }
 
 @end
