@@ -12,6 +12,7 @@
 		A54924CC1C913E1200754870 /* GameAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924CB1C913E1200754870 /* GameAccount.m */; };
 		A54924CF1C913E3800754870 /* GameAccountType.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924CE1C913E3800754870 /* GameAccountType.m */; };
 		A54924D31C91486F00754870 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924D21C91486F00754870 /* Person.m */; };
+		A54924D61C9149D900754870 /* TelephoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924D51C9149D900754870 /* TelephoneNumber.m */; };
 		A55B05F41C8D596400B6A3CB /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = A55B05F31C8D596400B6A3CB /* Price.m */; };
 		A55BBADF1C8FD64F0080F8EE /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBADE1C8FD64F0080F8EE /* ShoppingList.m */; };
 		A55BBAE31C8FF45F0080F8EE /* Chips.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAE21C8FF45F0080F8EE /* Chips.m */; };
@@ -42,6 +43,8 @@
 		A54924CE1C913E3800754870 /* GameAccountType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameAccountType.m; sourceTree = "<group>"; };
 		A54924D11C91486F00754870 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		A54924D21C91486F00754870 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		A54924D41C9149D900754870 /* TelephoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelephoneNumber.h; sourceTree = "<group>"; };
+		A54924D51C9149D900754870 /* TelephoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelephoneNumber.m; sourceTree = "<group>"; };
 		A55B05F21C8D596400B6A3CB /* Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
 		A55B05F31C8D596400B6A3CB /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
 		A55BBADD1C8FD64F0080F8EE /* ShoppingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingList.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 			children = (
 				A54924D11C91486F00754870 /* Person.h */,
 				A54924D21C91486F00754870 /* Person.m */,
+				A54924D41C9149D900754870 /* TelephoneNumber.h */,
+				A54924D51C9149D900754870 /* TelephoneNumber.m */,
 			);
 			name = "03.Extract Class";
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 				A54924CF1C913E3800754870 /* GameAccountType.m in Sources */,
 				A579F0561C8961BE0031C003 /* Movie.m in Sources */,
 				A579F03E1C89604D0031C003 /* main.m in Sources */,
+				A54924D61C9149D900754870 /* TelephoneNumber.m in Sources */,
 				A5615FFF1C8ECCF400EE7A8A /* ExtractMethod.m in Sources */,
 				A55B05F41C8D596400B6A3CB /* Price.m in Sources */,
 				A54924CC1C913E1200754870 /* GameAccount.m in Sources */,

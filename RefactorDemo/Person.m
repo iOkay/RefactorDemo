@@ -7,8 +7,11 @@
 //
 
 #import "Person.h"
+#import "TelephoneNumber.h"
 
 @interface Person ()
+
+@property (nonatomic, strong) TelephoneNumber *officeTelephone;
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *officeAreaCode;
