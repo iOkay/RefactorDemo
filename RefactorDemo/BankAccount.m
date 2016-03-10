@@ -19,18 +19,7 @@
 @implementation BankAccount
 
 - (double)overdraftChange {
-    if ([self.type isPremium]) {
-        
-        double result = 10;
-        if (self.daysOverdrawn > 7) {
-            result += (self.daysOverdrawn - 7) * 0.85;
-            return result;
-        }
-    } else {
-        return self.daysOverdrawn * 1.75;
-    }
-    
-    return 0;
+    return [self.type overdraftChange:self.daysOverdrawn];
 }
 
 - (double)bankCharge {
