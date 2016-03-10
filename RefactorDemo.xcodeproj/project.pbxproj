@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A54924C51C9111FB00754870 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924C41C9111FB00754870 /* BankAccount.m */; };
 		A54924C81C91121200754870 /* BankAccountType.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924C71C91121200754870 /* BankAccountType.m */; };
+		A54924CC1C913E1200754870 /* GameAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924CB1C913E1200754870 /* GameAccount.m */; };
+		A54924CF1C913E3800754870 /* GameAccountType.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924CE1C913E3800754870 /* GameAccountType.m */; };
 		A55B05F41C8D596400B6A3CB /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = A55B05F31C8D596400B6A3CB /* Price.m */; };
 		A55BBADF1C8FD64F0080F8EE /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBADE1C8FD64F0080F8EE /* ShoppingList.m */; };
 		A55BBAE31C8FF45F0080F8EE /* Chips.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAE21C8FF45F0080F8EE /* Chips.m */; };
@@ -33,6 +35,10 @@
 		A54924C41C9111FB00754870 /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
 		A54924C61C91121200754870 /* BankAccountType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountType.h; sourceTree = "<group>"; };
 		A54924C71C91121200754870 /* BankAccountType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountType.m; sourceTree = "<group>"; };
+		A54924CA1C913E1200754870 /* GameAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAccount.h; sourceTree = "<group>"; };
+		A54924CB1C913E1200754870 /* GameAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameAccount.m; sourceTree = "<group>"; };
+		A54924CD1C913E3800754870 /* GameAccountType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAccountType.h; sourceTree = "<group>"; };
+		A54924CE1C913E3800754870 /* GameAccountType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameAccountType.m; sourceTree = "<group>"; };
 		A55B05F21C8D596400B6A3CB /* Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
 		A55B05F31C8D596400B6A3CB /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
 		A55BBADD1C8FD64F0080F8EE /* ShoppingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingList.h; sourceTree = "<group>"; };
@@ -78,6 +84,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A54924C91C913DE400754870 /* 02.Move Field */ = {
+			isa = PBXGroup;
+			children = (
+				A54924CA1C913E1200754870 /* GameAccount.h */,
+				A54924CB1C913E1200754870 /* GameAccount.m */,
+				A54924CD1C913E3800754870 /* GameAccountType.h */,
+				A54924CE1C913E3800754870 /* GameAccountType.m */,
+			);
+			name = "02.Move Field";
+			sourceTree = "<group>";
+		};
 		A55BBADC1C8FD5170080F8EE /* 04.Replace Temp with Query */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +136,7 @@
 		A55BBAEF1C9039AC0080F8EE /* 02.Moving Features Between Objects */ = {
 			isa = PBXGroup;
 			children = (
+				A54924C91C913DE400754870 /* 02.Move Field */,
 				A55BBAF01C9039C10080F8EE /* 01.Move Method */,
 			);
 			name = "02.Moving Features Between Objects";
@@ -296,10 +314,12 @@
 				A579F0411C89604D0031C003 /* AppDelegate.m in Sources */,
 				A54924C81C91121200754870 /* BankAccountType.m in Sources */,
 				A579F0591C89636B0031C003 /* Rental.m in Sources */,
+				A54924CF1C913E3800754870 /* GameAccountType.m in Sources */,
 				A579F0561C8961BE0031C003 /* Movie.m in Sources */,
 				A579F03E1C89604D0031C003 /* main.m in Sources */,
 				A5615FFF1C8ECCF400EE7A8A /* ExtractMethod.m in Sources */,
 				A55B05F41C8D596400B6A3CB /* Price.m in Sources */,
+				A54924CC1C913E1200754870 /* GameAccount.m in Sources */,
 				A55BBADF1C8FD64F0080F8EE /* ShoppingList.m in Sources */,
 				A54924C51C9111FB00754870 /* BankAccount.m in Sources */,
 				A55BBAEB1C90169E0080F8EE /* Account.m in Sources */,
