@@ -10,6 +10,7 @@
 
 @interface BankAccountType : NSObject
 
+- (double)overdraftChange:(int)daysOverdrawn;
 - (BOOL)isPremium;
 
 @end
