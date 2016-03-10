@@ -13,12 +13,23 @@
 
 @property (nonatomic, strong) GameAccountType *type;
 
+
 @end
 
 @implementation GameAccount
 
 - (double)interestForAmount:(double)amount days:(int)days {
-    return _type.interestRate * amount * days / 365;
+    return self.interestRate * amount * days / 365;
 }
+
+- (void)setInterestRate:(double)interestRate
+{
+    [_type setInterestRate:interestRate];
+}
+
+- (double)interestRate {
+    return [_type interestRate];
+}
+
 
 @end
