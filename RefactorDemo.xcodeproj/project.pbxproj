@@ -13,6 +13,8 @@
 		A54924CF1C913E3800754870 /* GameAccountType.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924CE1C913E3800754870 /* GameAccountType.m */; };
 		A54924D31C91486F00754870 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924D21C91486F00754870 /* Person.m */; };
 		A54924D61C9149D900754870 /* TelephoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924D51C9149D900754870 /* TelephoneNumber.m */; };
+		A54924DA1C91626E00754870 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924D91C91626E00754870 /* Employee.m */; };
+		A54924DD1C91628100754870 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924DC1C91628100754870 /* Department.m */; };
 		A55B05F41C8D596400B6A3CB /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = A55B05F31C8D596400B6A3CB /* Price.m */; };
 		A55BBADF1C8FD64F0080F8EE /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBADE1C8FD64F0080F8EE /* ShoppingList.m */; };
 		A55BBAE31C8FF45F0080F8EE /* Chips.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAE21C8FF45F0080F8EE /* Chips.m */; };
@@ -45,6 +47,10 @@
 		A54924D21C91486F00754870 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		A54924D41C9149D900754870 /* TelephoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelephoneNumber.h; sourceTree = "<group>"; };
 		A54924D51C9149D900754870 /* TelephoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelephoneNumber.m; sourceTree = "<group>"; };
+		A54924D81C91626E00754870 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		A54924D91C91626E00754870 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		A54924DB1C91628100754870 /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		A54924DC1C91628100754870 /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
 		A55B05F21C8D596400B6A3CB /* Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
 		A55B05F31C8D596400B6A3CB /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
 		A55BBADD1C8FD64F0080F8EE /* ShoppingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingList.h; sourceTree = "<group>"; };
@@ -112,6 +118,17 @@
 			name = "03.Extract Class";
 			sourceTree = "<group>";
 		};
+		A54924D71C91622A00754870 /* 05.Hide Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				A54924D81C91626E00754870 /* Employee.h */,
+				A54924D91C91626E00754870 /* Employee.m */,
+				A54924DB1C91628100754870 /* Department.h */,
+				A54924DC1C91628100754870 /* Department.m */,
+			);
+			name = "05.Hide Delegate";
+			sourceTree = "<group>";
+		};
 		A55BBADC1C8FD5170080F8EE /* 04.Replace Temp with Query */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +170,7 @@
 		A55BBAEF1C9039AC0080F8EE /* 02.Moving Features Between Objects */ = {
 			isa = PBXGroup;
 			children = (
+				A54924D71C91622A00754870 /* 05.Hide Delegate */,
 				A54924D01C91484400754870 /* 03.Extract Class */,
 				A54924C91C913DE400754870 /* 02.Move Field */,
 				A55BBAF01C9039C10080F8EE /* 01.Move Method */,
@@ -329,6 +347,7 @@
 				A55BBAE31C8FF45F0080F8EE /* Chips.m in Sources */,
 				A55BBAEE1C9018A50080F8EE /* Gamma.m in Sources */,
 				A55BBAE71C9002600080F8EE /* Pudding.m in Sources */,
+				A54924DA1C91626E00754870 /* Employee.m in Sources */,
 				A579F05C1C8964090031C003 /* Customer.m in Sources */,
 				A579F0411C89604D0031C003 /* AppDelegate.m in Sources */,
 				A54924C81C91121200754870 /* BankAccountType.m in Sources */,
@@ -337,6 +356,7 @@
 				A579F0561C8961BE0031C003 /* Movie.m in Sources */,
 				A579F03E1C89604D0031C003 /* main.m in Sources */,
 				A54924D61C9149D900754870 /* TelephoneNumber.m in Sources */,
+				A54924DD1C91628100754870 /* Department.m in Sources */,
 				A5615FFF1C8ECCF400EE7A8A /* ExtractMethod.m in Sources */,
 				A55B05F41C8D596400B6A3CB /* Price.m in Sources */,
 				A54924CC1C913E1200754870 /* GameAccount.m in Sources */,
