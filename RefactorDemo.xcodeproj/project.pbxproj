@@ -15,6 +15,7 @@
 		A54924D61C9149D900754870 /* TelephoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924D51C9149D900754870 /* TelephoneNumber.m */; };
 		A54924DA1C91626E00754870 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924D91C91626E00754870 /* Employee.m */; };
 		A54924DD1C91628100754870 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = A54924DC1C91628100754870 /* Department.m */; };
+		A5595CCA1C92C25700A9D0BD /* CustomerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5595CC91C92C25700A9D0BD /* CustomerManager.m */; };
 		A55B05F41C8D596400B6A3CB /* Price.m in Sources */ = {isa = PBXBuildFile; fileRef = A55B05F31C8D596400B6A3CB /* Price.m */; };
 		A55BBADF1C8FD64F0080F8EE /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBADE1C8FD64F0080F8EE /* ShoppingList.m */; };
 		A55BBAE31C8FF45F0080F8EE /* Chips.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BBAE21C8FF45F0080F8EE /* Chips.m */; };
@@ -51,6 +52,8 @@
 		A54924D91C91626E00754870 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		A54924DB1C91628100754870 /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
 		A54924DC1C91628100754870 /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
+		A5595CC81C92C25700A9D0BD /* CustomerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerManager.h; sourceTree = "<group>"; };
+		A5595CC91C92C25700A9D0BD /* CustomerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerManager.m; sourceTree = "<group>"; };
 		A55B05F21C8D596400B6A3CB /* Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Price.h; sourceTree = "<group>"; };
 		A55B05F31C8D596400B6A3CB /* Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Price.m; sourceTree = "<group>"; };
 		A55BBADD1C8FD64F0080F8EE /* ShoppingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingList.h; sourceTree = "<group>"; };
@@ -127,6 +130,23 @@
 				A54924DC1C91628100754870 /* Department.m */,
 			);
 			name = "05.Hide Delegate";
+			sourceTree = "<group>";
+		};
+		A5595CC51C92C17F00A9D0BD /* 04.Simplifying Conditional Expressions */ = {
+			isa = PBXGroup;
+			children = (
+				A5595CC61C92C1C900A9D0BD /* 05.Remove Control Flag */,
+			);
+			name = "04.Simplifying Conditional Expressions";
+			sourceTree = "<group>";
+		};
+		A5595CC61C92C1C900A9D0BD /* 05.Remove Control Flag */ = {
+			isa = PBXGroup;
+			children = (
+				A5595CC81C92C25700A9D0BD /* CustomerManager.h */,
+				A5595CC91C92C25700A9D0BD /* CustomerManager.m */,
+			);
+			name = "05.Remove Control Flag";
 			sourceTree = "<group>";
 		};
 		A55BBADC1C8FD5170080F8EE /* 04.Replace Temp with Query */ = {
@@ -231,6 +251,7 @@
 		A579F03B1C89604D0031C003 /* RefactorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5595CC51C92C17F00A9D0BD /* 04.Simplifying Conditional Expressions */,
 				A55BBAEF1C9039AC0080F8EE /* 02.Moving Features Between Objects */,
 				A5615FFB1C8ECC7F00EE7A8A /* 01.Composing Methods */,
 				A579F0531C8961AB0031C003 /* Model */,
@@ -341,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5595CCA1C92C25700A9D0BD /* CustomerManager.m in Sources */,
 				A56160031C8ED5DC00EE7A8A /* Order.m in Sources */,
 				A579F0441C89604D0031C003 /* ViewController.m in Sources */,
 				A54924D31C91486F00754870 /* Person.m in Sources */,
