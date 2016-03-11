@@ -16,11 +16,11 @@
         if (!found) {
             if ([[people objectAtIndex:i] isEqualToString:@"Don"]) {
                 
-                found = true;
+                break;
             }
             if ([[people objectAtIndex:i] isEqualToString:@"John"]) {
                 
-                found = true;
+                break;
             }
         }
     }
