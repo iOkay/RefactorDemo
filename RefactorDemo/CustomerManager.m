@@ -11,17 +11,15 @@
 @implementation CustomerManager
 
 - (void)checkSecurity:(NSArray *)people {
-    BOOL found = false;
+
     for (int i = 0; i < [people count]; i++) {
-        if (!found) {
-            if ([[people objectAtIndex:i] isEqualToString:@"Don"]) {
-                
-                break;
-            }
-            if ([[people objectAtIndex:i] isEqualToString:@"John"]) {
-                
-                break;
-            }
+        if ([[people objectAtIndex:i] isEqualToString:@"Don"]) {
+            
+            break;
+        }
+        if ([[people objectAtIndex:i] isEqualToString:@"John"]) {
+            
+            break;
         }
     }
 }
